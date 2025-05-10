@@ -1,0 +1,365 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean BBQ & Grill N.L.</title>
+    <link rel="shortcut icon" href="{% static 'img/Logo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WON KOREAN BBQ & GRILL</h1>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Sobre nosotros">Sobre nosotros</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Horarios y Direccion">Horarios y Direccion</a></li>
+                <li><a href="#Reservacion">Reservacion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenido" id ="inicio">
+            <img src="{% static 'img/imagen1.webp' %}" alt="Logo">
+            <div class="texto-en-imagen">
+                <p>Descubre el autentico sabor de cora en Monterrey y Apodaca. Ofrecemos un buffet coreano y carnes asada al estilo Korean BBQ. Disfruta de una experiencia culinaria unica con nuestras recetas tradicionales. Siguenos en redes sociales con los hastags #KoreanBBQ y #BuffetCoreano</p>
+                <p>¡무한리필!</p>
+                <h3>¡All you can eat!</h3>
+            </div>    
+        </div>
+    </main>
+    
+    <section class="social-media" id ="Sobre nosotros">
+        <div class="Sobre nosotros">
+            <h2>Nuestras redes sociales</h2>
+            <a href="https://www.facebook.com/wonkoreanbbqgrill/?locale=es_LA">Facebook: wonkoreanbbqgrill</a><br>
+            <a href="https://www.instagram.com/won.korean.bbq.grill/?hl=es">Instagram: korean.bbq.grill</a><br>   
+        </div>
+    </section>
+    
+    <section class="branch" id ="Menu">
+        <div class="Menu">
+            <h2>MENU</h2>
+            <ul>
+                <li><a href="#SucursalApodaca">Sucursal Apodaca</a></li>
+                <li><a href="#SucursalMonterrey">Sucursal Monterrey</a></li>
+            </ul>
+        </div>
+    </section>
+        
+    <section class="branch-apodaca" id="SucursalApodaca">
+        <div class="Sucursal Apodaca">
+            <h2>MENU</h2>
+            <h2>Sucursal Apodaca</h2>
+            <ul>
+                <li><a href="#Premium">Premium</a></li>
+                <li><a href="#Clasico">Clasico</a></li>
+                <li><a href="#Carta">A la Carta</a></li>
+                <li><a href="#Bebidas">Bebida y postres</a></li>
+            </ul>
+        </div>
+    </section>
+        
+    <section class="branch-premium" id="Premium">
+        <h2>Premium</h2>
+        <div>
+            <img src="{% static 'img/presio-premium-1.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 1 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 2 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 3 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 4 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 5 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 6 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 7 pre.jpg' %}" alt="Logo">
+        </div>
+    </section>
+        
+    <section class="branch-clasico" id="Clasico">
+        <h2>Clasico</h2>
+        <div>
+            <img src="{% static 'img/precio-clasico-1.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 1 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 2 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 3 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 4 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 5 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 6 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 7 cla.jpg' %}" alt="Logo">
+
+        </div>
+    </section>
+        
+    <section class="branch-carta" id="Carta">
+        <h2>Carta</h2>
+        <div>
+            <img src="{% static 'img/apodaca 1 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 2 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 3 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 4 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 5 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 9 carta.jpg' %}" alt="Logo">
+
+        </div>
+    </section>
+        
+    <section class="branch-bebidas" id="Bebidas">
+        <h2>Bebidas</h2>
+        <div>
+            <img src="{% static 'img/apodaca 5 beb y postre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 6 beb y postre.jpg' %}" alt="Logo">
+        </div>
+    </section>
+        
+    <section class="branch-Monterrey" id="SucursalMonterrey">
+        <div class="Sucursal Monterrey">
+            <h2>MENU</h2>
+            <h2>Sucursal Monterrey</h2>
+            <ul>
+                <li><a href="#PremiumPlus">Premium plus</a></li>
+                <li><a href="#Premium">Premium</a></li>
+                <li><a href="#Clasico">Clasico</a></li>
+                <li><a href="#Carta">A la Carta</a></li>
+                <li><a href="#Bebidas">Bebida y postres</a></li>
+            </ul>
+        </div>
+    </section>
+        
+    <section class="branch-premium-plus" id="PremiumPlus">
+        <h2>PremiumPlus</h2>
+        <div>
+            <img src="{% static 'img/plus 1.jpg' %}" alt="Logo">
+            <img src="{% static 'img/plus 2.jpg' %}" alt="Logo">
+            <img src="{% static 'img/plus 3.jpg' %}" alt="Logo">
+            <img src="{% static 'img/plus 4.jpg' %}" alt="Logo">
+            <img src="{% static 'img/plus 5.jpg' %}" alt="Logo">
+            <img src="{% static 'img/plus 7.jpg' %}" alt="Logo">
+            <img src="{% static 'img/plus 8.jpg' %}" alt="Logo">
+        </div>
+    </section>
+        
+    <section class="branch-premium" id="Premium">
+        <h2>Premium</h2>
+        <div>
+            <img src="{% static 'img/apodaca 1 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 2 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 3 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 4 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 5 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 6 pre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 7 pre.jpg' %}" alt="Logo">
+        </div>
+    </section>
+        
+    <section class="branch-clasico" id="Clasico">
+        <h2>Clasico</h2>
+        <div>
+            <img src="{% static 'img/apodaca 1 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 2 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 3 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 4 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 5 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 6 cla.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 7 cla.jpg' %}" alt="Logo">
+        </div>
+    </section>
+        
+    <section class="branch-carta" id="Carta">
+        <h2>Carta</h2>
+        <div>
+            <img src="{% static 'img/apodaca 1 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 2 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 3 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 4 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 5 carta.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 9 carta.jpg' %}" alt="Logo">
+        </div>
+    </section>
+        
+    <section class="branch-bebidas" id="Bebidas">
+        <h2>Bebidas</h2>
+        <div>
+            <img src="{% static 'img/apodaca 5 beb y postre.jpg' %}" alt="Logo">
+            <img src="{% static 'img/apodaca 6 beb y postre.jpg' %}" alt="Logo">
+        </div>
+    </section>
+
+    <section class="sucursales" id="Horarios y Direccion">
+        <div class="Sucursales y Horario">
+            <h2>Horario y Direccion</h2>
+            <H3>Sucursal Apodaca</H3>
+            <p><strong>Horario:</strong>Lunes a Sábado: 12:00 P.M. - 11:00 P.M., Domingo: 12:00 P.M. - 10:00 P.M.</p>
+            <p><strong>Direccion:</strong> Miguel Aleman 1000 parque indsutrial stiva aeropuerto plaza aeropuerto monterrey, 66640 Cdad. Apodaca, N.L.</p>
+            <h3>Sucursal Monterrey</h3>
+            <p><strong>Horario:</strong>Lunes a Sábado: 12:00 P.M. - 11:00 P.M., Domingo: 12:00 P.M. - 10:00 P.M.</p>
+            <p><strong>Direccion:</strong> Avenida eugenio garza sada 3820, piso 3 local 6, Más Palomas (Valle de Santiago), 64860 Monterrey, N.L.</p>
+        </div>
+    </section>
+        <div id="Reservacion" id="Reservacion">
+            <section class="Reservacion">
+                <div class="contenedor-reservacion">
+                    <h2 class="titulo">Reservación</h2>
+                    <div class="contacto-cont">
+                        <form action="procesar_reservacion.php" method="POST">
+                            <div class="contact-ind">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="contact-ind">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                            <div class="contact-ind">
+                                <label for="sucursal">Sucursal:</label>
+                                <input type="text" id="sucursal" name="sucursal" placeholder="Ej: Apodaca, Monterrey" required>
+                            </div>
+                            <div class="contact-ind">
+                                <label for="personas">Cantidad de personas:</label>
+                                <input type="text" id="personas" name="personas" pattern="\d+" placeholder="Ej: 4" required>
+                            </div>
+                            <div class="contact-ind">
+                                <label for="fecha">Fecha de reservación:</label>
+                                <input type="text" id="fecha" name="fecha" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" required>
+                            </div>
+                            <div class="contact-ind">
+                                <label for="hora">Hora de reservación:</label>
+                                <input type="text" id="hora" name="hora" pattern="\d{2}:\d{2}" placeholder="HH:MM" required>
+                            </div>
+                            <div class="contact-ind">
+                                <label for="celular">Número de teléfono o Celular:</label>
+                                <input type="text" id="celular" name="celular" pattern="[0-9]{10}" placeholder="Ej: 8112345678" required>
+                            </div>
+                            <div class="contact-ind">
+                                <label for="correo">Correo electrónico:</label>
+                                <input type="text" id="correo" name="correo" placeholder="Ej: correo@ejemplo.com" required>
+                            </div>
+                            <div class="contact-submit">
+                                <button type="submit" class="btn-reservacion">Reservar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>                
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Función para mostrar mensaje
+            function mostrarMensaje(texto) {
+                const modal = document.createElement("div");
+                modal.classList.add("modal-mensaje");
+                modal.innerHTML = `
+                    <div class="modal-contenido">
+                        <p>${texto}</p>
+                        <button class="cerrar-modal">Cerrar</button>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+        
+                modal.querySelector(".cerrar-modal").addEventListener("click", function () {
+                    modal.remove();
+                });
+            }
+        
+            // Validación y manejo del formulario
+            const formulario = document.querySelector("form");
+        
+            formulario.addEventListener("submit", function (event) {
+                event.preventDefault(); // Evita el envío automático
+        
+                const nombre = formulario.nombre.value.trim();
+                const apellido = formulario.apellido.value.trim();
+                const sucursal = formulario.sucursal.value.trim();
+                const personas = formulario.personas.value.trim();
+                const fecha = formulario.fecha.value.trim();
+                const hora = formulario.hora.value.trim();
+                const celular = formulario.celular.value.trim();
+                const correo = formulario.correo.value.trim();
+
+          
+                if (!nombre || !apellido || !sucursal || !personas || !fecha || !hora || !celular || !correo) {
+                    mostrarMensaje("Por favor, completa todos los campos.");
+                    return;
+                }
+        
+                if (!correo.includes("@") || !correo.includes(".")) {
+                    mostrarMensaje("Por favor, ingresa un email válido.");
+                    return;
+                }
+        
+                mostrarMensaje(`¡Gracias, ${nombre}! Hemos recibido tu reservación para ${personas} personas.`);
+                formulario.reset();  // Resetea el formulario después de enviar
+            });
+        });
+    </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll(".image-thumb");
+    let currentIndex = 0;
+    const showLargeImage = (index) => {
+                const selectedImage = images[index];
+                const largeImageContainer = document.createElement("div");
+                largeImageContainer.classList.add("large-image-container");
+                
+                largeImageContainer.innerHTML = `
+                <img src="${selectedImage.src}" alt="${selectedImage.alt}" class="large-image">
+                <button class="close-btn">Cerrar</button>
+                <button class="nav-btn prev-btn">&#10094;</button>
+                <button class="nav-btn next-btn">&#10095;</button>
+                `;
+                
+                document.body.appendChild(largeImageContainer);
+                const closeBtn = document.querySelector(".close-btn");
+                const prevBtn = document.querySelector(".prev-btn");
+                const nextBtn = document.querySelector(".next-btn");
+                
+                
+                closeBtn.addEventListener("click", () => {
+                document.body.removeChild(largeImageContainer);
+            });
+
+            prevBtn.addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateLargeImage();
+            });
+
+            nextBtn.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateLargeImage();
+            });
+
+            // Function to update the large image
+            const updateLargeImage = () => {
+                const largeImage = document.querySelector(".large-image");
+                largeImage.src = images[currentIndex].src;
+                largeImage.alt = images[currentIndex].alt;
+            };
+        };
+
+            // Add event listeners to thumbnails
+            images.forEach((image, index) => {
+            image.addEventListener("click", () => {
+            currentIndex = index;
+            showLargeImage(index);
+            });
+        });
+    });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 WON KOREAN BBQ & GRILL. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

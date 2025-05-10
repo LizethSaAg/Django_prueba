@@ -1,0 +1,626 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+/* Cabecera */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Estilos de la navegación */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Sección principal */
+main {
+    position: relative;
+    width: 100%;
+}
+
+
+/* Rectángulo borroso con texto */
+.texto-en-imagen {
+    position: absolute;
+    top: 50%; /* Centra el rectángulo en la imagen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Ajusta el tamaño del rectángulo */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    border-radius: 10px;
+}
+
+/* Encabezados*/
+h2 {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px; /* Agrega espacio debajo de cada párrafo */
+}
+
+/* Imagen principal */
+.contenido img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Para que la imagen cubra toda la pantalla */
+    filter: brightness(50%);/* Para oscurecer la imagen y que el texto resalte */
+}
+
+
+
+
+
+
+/* Sección social media */
+.social-media {
+    width: 70%;
+    margin: auto;
+    background-color: #a30707;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.social-media h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color:#222
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+}
+
+
+
+
+
+
+
+/* Estilos para centrar y estilizar el contenedor de sucursales */
+.branch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    height: 70vh; /* Asegura que el contenedor esté centrado verticalmente */
+}
+
+
+
+.branch .Menu {
+    border: 3px solid darkred; /* Bordes rojos */
+    position: relative;
+    padding: 20px;
+    background-color: white; /* Fondo blanco para destacar el contenido */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para un toque de diseño */
+
+}
+
+.branch .Menu h2 {
+    color: darkred; /* Color rojo para el encabezado */
+    margin-bottom: 20px;
+}
+
+.branch .Menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.branch .Menu ul li {
+    margin-bottom: 10px;
+}
+
+.branch .Menu ul li a {
+    text-decoration: none;
+    color: #555; /* Color rojo para los enlaces */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.branch .Menu ul li a:hover {
+    color: darkred; /* Color más oscuro al pasar el mouse */
+}
+
+
+
+
+
+
+
+/* Estilos para el contenedor de las sucursales */
+.Sucursal {
+    text-align: center; /* Centra el contenido del contenedor */
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista */
+.Sucursal ul {
+    display: flex;
+    justify-content: center; /* Centra los elementos de la lista */
+    gap: 20px; /* Espacio entre los rectángulos */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para cada elemento de la lista */
+.Sucursal ul li {
+    background-color: darkred; /* Color rojo */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s;
+}
+
+.Sucursal ul li:hover {
+    background-color: red; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para los enlaces */
+.Sucursal ul li a {
+    text-decoration: none;
+    color: white; /* Color del texto del enlace */
+    font-size: 16px;
+}
+
+/* Espacio adicional específico para Sucursal Monterrey */
+.branch-Monterrey {
+    margin-top: 40px; /* Espacio adicional encima de la sección */
+}
+
+/* Títulos de cada sección */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para las imágenes del menú */
+section div.branch.Menu {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+section div img {
+    width: 300px; /* Tamaño de las imagenes del menú */
+    height: auto;
+    object-fit: cover;
+    transition: .3s ease;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+section {
+    text-align: center; /* Centra las imágenes dentro del contenedor de la sección */
+}
+
+/* Estilo para cuando se muestra la imagen grande */
+.large-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.large-image-container img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+/* Estilo para el botón de cerrar */
+.close-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(173, 6, 6);
+    border: none;
+    font-size: 24px;
+    color: #160808;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Estilo para los botones de navegación */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 30px; /* Aumentamos el tamaño de la fuente */
+    color: #fff;
+    padding: 20px; /* Aumentamos el tamaño del botón */
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10000;
+    transform: translateY(-50%); /* Centrado vertical */
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn {
+    left: 10px; /* Ubicado a la izquierda */
+}
+
+.next-btn {
+    right: 10px; /* Ubicado a la derecha */
+}
+
+/* Efecto hover para los botones de navegación */
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilo para los botones de navegación (izquierda y derecha) */
+.prev-btn, .next-btn {
+    font-size: 36px; /* Aumentamos el tamaño de los íconos */
+}
+
+/* Estilo para las imágenes al hacer hover */
+section div img:hover {
+    transform: scale(1.02); /* Efecto al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+/* Estilos para la sección de Horario */
+.sucursales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Color de fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative; /* Para que la onda pueda posicionarse correctamente */
+    margin: 40px 20px; /* Márgenes para crear espacio alrededor de la sección */
+}
+
+
+/* Estilos para el contenedor interno */
+.sucursales .Sucursales.y.Horario {
+    max-width: 800px;
+    position: relative;
+    padding: 20px;
+    color: white; /* Para que el texto sea legible */
+    text-align: center;
+    color: black; /* Para que el texto sea visible */
+}
+
+
+/* Título principal */
+.sucursales .Sucursales.y.Horario h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+/* Subtítulos */
+.sucursales .Sucursales.y.Horario h3 {
+    color: #666;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+/* Párrafos */
+.sucursales .Sucursales.y.Horario p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+
+}
+
+/* Negrita */
+.sucursales .Sucursales.y.Horario p strong {
+    color: #000;
+
+}
+
+
+
+.modal-mensaje {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(77, 13, 13, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-contenido {
+    background: #c03131;
+    padding: 15px;
+    border-radius: 8px;
+    color: black;
+}
+
+.cerrar-modal {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cerrar-modal:hover {
+    background: #ff4f4f;
+}
+
+
+
+
+
+/* Estilos para la sección de la reservación */
+#Reservacion {
+    padding: 20px;
+    background-color: #a30707; /* Fondo rojo como la cocina coreana */
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Reservacion {
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.contenedor-reservacion {
+    padding: 20px;
+}
+
+/* Título de la sección */
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    color: black; /* Palabra 'Reservar' en negro */
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los inputs */
+.contacto-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre cada campo */
+}
+
+/* Estilos para los campos de entrada */
+.contact-ind {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;  /* Espacio entre label y input */
+    margin-bottom: 20px; /* Espacio entre cada grupo de campo */
+}
+
+.contact-ind label {
+    width: 30%; /* Ajusta el tamaño del label */
+    font-weight: bold;
+    color: white; /* Texto de las etiquetas en blanco */
+}
+
+.contact-ind input {
+    width: 65%; /* Ajusta el tamaño del input */
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd; /* Bordes grises */
+    border-radius: 4px;
+    outline: none;
+    background-color: white; /* Fondo blanco para los campos */
+    color: #333; /* Letras en gris oscuro */
+}
+
+.contact-ind input:focus {
+    border-color: #a30707; /* Borde rojo cuando el campo tiene foco */
+    box-shadow: 0 0 5px rgba(162, 7, 7, 0.2);
+}
+
+/* Estilos para el botón de enviar */
+.contact-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-reservacion {
+    background-color: black; /* Fondo negro */
+    color: white; /* Letras en blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservacion:hover {
+    background-color: #333; /* Cambio de color a gris oscuro cuando se pasa el mouse */
+}
+
+/* Estilos para los campos de entrada con un placeholder */
+input::placeholder {
+    color: #888; /* Color gris para el placeholder */
+}
+
+/* Ajustes de accesibilidad */
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Esto asegura que el pie de página se mueva al final */
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* tamaño para celulares */
+@media (max-width: 768px) {
+    .contenedor-reservacion {
+        padding: 10px;
+    }
+
+    .contacto-cont {
+        gap: 15px; /* Menos espacio entre los campos en pantallas pequeñas */
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    /* Alineación en pantallas más pequeñas */
+    .contact-ind {
+        flex-direction: column;  /* Cambia a columna para pantallas pequeñas */
+        gap: 10px; /* Menos espacio entre el label y el input */
+    }
+
+    .contact-ind label {
+        width: 100%; /* Acomoda el label en pantallas pequeñas */
+    }
+
+    .contact-ind input {
+        width: 100%; /* Acomoda el input en pantallas pequeñas */
+    }
+}
+
+
+
+
